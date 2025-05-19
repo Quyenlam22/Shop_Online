@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import './LayoutDefault.scss';
 import { IoMdHome } from "react-icons/io";
-import { FaCartShopping } from "react-icons/fa6";
+import CartMini from "../../components/CartMini";
 
 function LayoutDefault () {
     const navLinkActive = (e) => {
@@ -25,9 +25,7 @@ function LayoutDefault () {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/cart" className={navLinkActive}>
-                                    Cart <FaCartShopping  className="menu__icons"/>
-                                </NavLink>
+                                <CartMini navLinkActive={navLinkActive}/>
                             </li>
                         </ul>    
                     </div>
