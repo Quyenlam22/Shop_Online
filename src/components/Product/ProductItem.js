@@ -25,8 +25,8 @@ function ProductItem (props) {
                 <div className="product__price-old">${item.price}$</div>
                 <p className="product__stock">Còn lại: {item.stock} sản phẩm</p>
                 <div className="product__discountPercentage">${item.discountPercentage}%</div>
-                <div className="cart">
-                    <button onClick={handleClick}><FaCartShopping/></button>
+                <div>
+                    <button className="button-cart" onClick={handleClick}><FaCartShopping/></button>
                 </div>
             </div>
         </>

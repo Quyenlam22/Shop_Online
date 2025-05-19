@@ -1,13 +1,13 @@
 import { NavLink, Outlet } from "react-router-dom";
 import './LayoutDefault.scss';
 import { IoMdHome } from "react-icons/io";
-import CartMini from "../../components/CartMini";
+import CartMini from "../../components/Cart/CartMini";
 
 function LayoutDefault () {
     const navLinkActive = (e) => {
         return e.isActive ? "menu__link menu__link--active" : "menu__link";
     }
-    // 20p
+
     return (
         <>
             <div className="layout-default">
